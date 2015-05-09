@@ -20,7 +20,7 @@ echo " </title></head><body>"
 
 awk 'BEGIN{body=0; count=0}{
 if($1=="<p"){body=1; count+=1;}
-if($1=="</p>"){body=0}
+if($1=="</p>"){body=0; print; print "<hr>"}
 if(body==1){
 gsub("map_[0-9]*",count)
 print}
