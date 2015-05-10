@@ -17,7 +17,7 @@ echo "<head><title>"
 echo "$1"
 shift
 echo " </title>"
-echo "<style>*{background-color:#EEE;}.Output{background-color:#FFF;margin: 1em auto;width:1000px;}</style>"
+echo "<style>*{background-color:#EEE;margin:0;}.Output{background-color:#FFF;margin: 1em auto;width:1000px;padding: 0 1em;}</style>"
 echo "</head><body>"
 
 awk 'BEGIN{body=0; count=0}{
