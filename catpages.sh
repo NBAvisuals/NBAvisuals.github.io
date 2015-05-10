@@ -16,11 +16,13 @@ echo "<html xmlns=\"http://www.w3.org/1999/xhtml\">"
 echo "<head><title>"
 echo "$1"
 shift
-echo " </title></head><body>"
+echo " </title>"
+echo "<style>*{background-color:#EEE;}.Output{background-color:#FFF;margin: 1em auto;width:1000px;}</style>"
+echo "</head><body>"
 
 awk 'BEGIN{body=0; count=0}{
 if($1=="<p"){body=1; count+=1;}
-if($1=="</p>"){body=0; print; print "<hr>"}
+if($1=="</p>"){body=0; print;}
 if(body==1){
 gsub("map_[0-9]*",count)
 print}
