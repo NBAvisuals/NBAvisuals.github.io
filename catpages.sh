@@ -9,9 +9,10 @@
 #Clean up
 rm -rf HTMLLinks
 rm -f HTMLFiles/*.css
+rm -f HTMLFiles/*.dtd
 
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
-echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN\" \"HTMLFiles/xhtml-math11-f.dtd\">"
+echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">"
 echo "<html xmlns=\"http://www.w3.org/1999/xhtml\">"
 echo "<head><title>"
 echo "$1"
