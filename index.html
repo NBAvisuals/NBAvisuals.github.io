@@ -9,9 +9,41 @@
 * {font-family:  'Lato', sans-serif;color: #555;}
 body {padding:1em;font-size:100%;}
 a {color: #3366CC;text-decoration:none;font-size:1.2em;}
-h1 {font-size: 1.8em}
-h2 {font-size: 1.4em}
-h3 {font-size: 1.0em}
+h1 {font-size: 1.8em;
+}
+.round {
+margin-bottom:1em;
+max-width:800px;
+width:100%;
+}
+.round h2{
+padding: 0em;
+font-size:1.8em;
+}
+.east h3{
+color: #3333bb;
+font-size:1.4em;
+margin-bottom:1em;
+}
+.west h3{
+margin:0;
+font-size:1.4em;
+color: #bb3333;
+margin-bottom:1em;
+}
+.east {
+margin:0;
+margin-left:50%;
+width:50%;
+padding:0;
+}
+.west{
+width:50%;
+margin-left:0.0em;
+float:left;
+padding:0;
+
+}
 .Note {font-size:1.0em;padding:5em 0 1em 0;}
 footer {font-size:.8em;padding: 2em 0 0 0;}
 </style>
@@ -28,35 +60,53 @@ footer {font-size:.8em;padding: 2em 0 0 0;}
 </head>
 
 <body>
+<header>
 <h1>NBA Playoffs 2015: Visual Game Summaries</h1>
+</header>
 <!--
 <h2>NBA Finals</h2>
 <a href="">ATL/CLE - GSW/LAC/HOU (0-0)</a><br>
 !-->
-<h2>Conference Finals</h2>
-<h3>East</h3>
-<a href="">Cleveland - Atlanta (0-0)</a><br>
-<h3>West</h3>
-<a href="">LAC/HOU - Golden State (0-0)</a><br>
-<h2>Conference Semi-Finals</h2>
+<div class="round">
+  <h2>Conference Finals</h2>
+<div class="west">
+  <h3>West</h3>
+<a href="">Houston - Golden State (0-0)</a>
+</div>
+<div class="east">
+  <h3>East</h3>
+<a href="">Cleveland - Atlanta (0-0)</a>
+</div>
+</div><div class="round">
+  <h2>Conference Semi-Finals</h2>
+<div class="west">
+  <h3>West</h3>
+  <a href="MEM_GS.html">Memphis - Golden State (2-4)</a><br>
+<a href="LAC_HOU.html">LA Clippers - Houston (3-3)</a><br>
+</div>
+<div class="east">
 <h3>East</h3>
 <a href="WSH_ATL.html">Washington - Atlanta (2-4)</a><br>
 <a href="CHI_CLE.html">Chicago - Cleveland (2-4)</a><br>
-<h3>West</h3>
-<a href="MEM_GS.html">Memphis - Golden State (2-4)</a><br>
-<a href="LAC_HOU.html">LA Clippers - Houston (3-3)</a><br>
+</div>
+</div>
+<div class="round">
 <h2>First Round</h2>
-<h3>East</h3>
-<a href="BKN_ATL.html">Brooklyn - Atlanta (2-4)</a><br>
-<a href="BOS_CLE.html">Boston - Cleveland (0-4)</a><br>
-<a href="MIL_CHI.html">Milwaukee - Chicago (2-4)</a><br>
-<a href="WAS_TOR.html">Washington - Toronto (4-0)</a><br>
+<div class="west">
 <h3>West</h3>
 <a href="NOP_GSW.html">New Orleans - Golden State (0-4)</a><br>
 <a href="DAL_HOU.html">Dallas - Houston (1-4)</a><br>
 <a href="SAS_LAC.html">San Antonio - LA Clippers (3-4)</a><br>
 <a href="POR_MEM.html">Portland - Memphis (1-4)</a><br>
-
+</div>
+<div class="east">
+<h3>East</h3>
+<a href="BKN_ATL.html">Brooklyn - Atlanta (2-4)</a><br>
+<a href="BOS_CLE.html">Boston - Cleveland (0-4)</a><br>
+<a href="MIL_CHI.html">Milwaukee - Chicago (2-4)</a><br>
+<a href="WAS_TOR.html">Washington - Toronto (4-0)</a><br>
+</div>
+</div>
 <div class="Note">
   Note that hovering the dots will display details to the play:
 </div>
